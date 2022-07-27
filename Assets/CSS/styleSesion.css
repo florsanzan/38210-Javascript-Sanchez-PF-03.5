@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: #426696;
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+h2,
+p {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+
+h3 {
+    color: #426696;
+    font-weight: 600;
+    opacity: 0.8;
+
+}
+
+main {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #148a7a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.circulo1,
+.circulo2 {
+    background: white;
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.3));
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.circulo1 {
+    top: 5%;
+    right: 15%;
+
+}
+
+.circulo2 {
+    bottom: 5%;
+    left: 10%;
+}
+
+.dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    height: 25rem;
+    width: auto;
+    margin:auto 5rem auto
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 1rem 1rem;
+    margin: 0.5rem 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 1.2rem;
+
+  }
+
+  input[type=text]:focus {
+    border: 0.2rem solid #6995cf;
+
+  }
+
+  
+  input[type=submit]{
+    background-color:#6995cf;
+    border: none;
+    color: white;
+    padding: 1rem 4rem;
+    text-decoration: none;
+    margin: 1rem 0.5rem;
+    cursor: pointer;
+    border-radius: 2rem;
+  }
+
+  input[type=submit]:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+}
+  .button{
+    background-color:#6995cf;
+    border: none;
+    color: white;
+    padding: 0.5rem 3rem;
+    text-decoration: none;
+    margin: auto;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+
+    button:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+}
