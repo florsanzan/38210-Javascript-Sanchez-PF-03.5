@@ -6,6 +6,7 @@ let botones = document.getElementsByClassName("comprar");
 let temp = document.querySelector("template");
 let caja = temp.content.querySelector("div");
 let claseCajas = document.querySelector("section#caja");
+const sesion = document.querySelector('#sesion');
 
 //VARIABLES DECLARADAS
 let carrito;
@@ -49,6 +50,22 @@ for (let i = 0; i < libros.length; i++) {
     carrito.agregarItem(libros[i]);
   };
 }
+
+  //Sweet alert para suscribirse 
+const emails = [];
+sesion.addEventListener('click', async() => {
+  const { value: email } = await Swal.fire({
+    title: 'Suscribite a nuestra lista de correos',
+    input: 'email',
+    inputLabel: 'Vas a recibir grandes beneficios!',
+    inputPlaceholder: 'Acá podés ingresar tu email'
+  })
+  
+  if (email) {
+    Swal.fire(`Email ingresado: ${email}`)
+    emails.push(new Email(email));
+  }})
+
 
 //FUNCIONES
 function precioFinal(precioProducto) {
